@@ -67,7 +67,7 @@ fi
 rm -rf feeds/packages/lang/golang
 svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
 
-git clone https://github.com/gl-inet/glinet4.x.git $base/glinet
+git clone https://github.com/simonliying/glinet4.x.git $base/glinet
 ./scripts/feeds update -a 
 ./scripts/feeds install -a
 make defconfig

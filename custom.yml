@@ -4,19 +4,13 @@ feeds:
   - name: helloworld
     uri: https://github.com/fw876/helloworld.git
     branch: master
-  - name: node
-    uri: https://github.com/nxhack/openwrt-node-packages.git
-    branch: openwrt-21.02
+
 packages:
   - luci-app-mwan3
   - frpc
   - luci-app-frpc
   - mosquitto-nossl
-  - node
-  - node-npm
-  - node-red
-  - node-sqlite3
-  
+
 
 
 
@@ -31,10 +25,5 @@ diffconfig: |
   CONFIG_PACKAGE_luci-app-frpc=y
   CONFIG_PACKAGE_frpc=y
   CONFIG_PACKAGE_mosquitto-nossl=y
-  CONFIG_PACKAGE_node=m
-  CONFIG_NODEJS_16=y
-  CONFIG_NODEJS_ICU_SMALL=y
-  CONFIG_PACKAGE_node-npm=y
-  CONFIG_PACKAGE_node-red=y
-  CONFIG_PACKAGE_node-sqlite3=y
+
   

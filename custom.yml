@@ -6,6 +6,8 @@ feeds:
     branch: master
 
 packages:
+  - libatomic1
+  - libuv1
   - luci-app-mwan3
   - frpc
   - luci-app-frpc
@@ -16,6 +18,8 @@ packages:
 
 diffconfig: |
   CONFIG_PACKAGE_wpad-basic=n
+  CONFIG_PACKAGE_libatomic=y
+  CONFIG_PACKAGE_libuv=y
   CONFIG_PACKAGE_wpad=n
   CONFIG_PACKAGE_dnsmasq=n
   CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
